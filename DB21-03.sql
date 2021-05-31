@@ -1,4 +1,4 @@
-CREATE DATABASE study DEFAULT CHARACTER SET utf8;
+CREATE DATABASE study2 DEFAULT CHARACTER SET utf8;
 use study2;
 
 /*  サーバールームへの入退室管理テーブル  accroom
