@@ -32,3 +32,24 @@ INSERT INTO reasontbl ( rsnid,rsnname ) VALUES ( '2','リリース作業' );
 INSERT INTO reasontbl ( rsnid,rsnname ) VALUES ( '3','障害対応' );
 INSERT INTO reasontbl ( rsnid,rsnname ) VALUES ( '9','その他' );
  
+/*  社員マスターテーブル member */
+DROP TABLE IF EXISTS member;
+CREATE TABLE member(name VARCHAR(64), gender VARCHAR(64), address VARCHAR(64));
+
+INSERT INTO member VALUES('Ohta', 'male', 'Tokyo');
+INSERT INTO member VALUES('Honda', 'female', 'Saitama');
+INSERT INTO member VALUES('Nagai', 'male', 'Tokyo');
+INSERT INTO member VALUES('Ohki', 'male', 'Saitama');
+INSERT INTO member VALUES('Yamada', 'male', 'Chiba');
+INSERT INTO member VALUES('Tanaka', 'male', 'Tokyo');
+INSERT INTO member VALUES('Tanaka', 'female', 'Chiba');
+INSERT INTO member VALUES('Kawai', 'female', 'Tokyo');
+INSERT INTO member VALUES('Ogawa', 'female', 'Tokyo');
+INSERT INTO member VALUES('Todoroki', 'male', 'Kanagawa');
+INSERT INTO member VALUES('Hayakawa', 'male', 'Kanagawa');
+INSERT INTO member VALUES('Kaneda', 'male', 'Saitama');
+INSERT INTO member VALUES('Kosaka', 'male', 'Saitama');
+INSERT INTO member VALUES('Yamada', 'female', 'Saitama');
+INSERT INTO member VALUES('Sasaki', 'female', 'Tokyo');
+INSERT INTO member VALUES('Kobayashi', 'male', 'Chiba');
+INSERT INTO member VALUES('Hashimoto', 'male', 'Tokyo');
