@@ -1,6 +1,20 @@
 CREATE DATABASE study2 DEFAULT CHARACTER SET utf8;
 use study2;
 
+DROP TABLE IF EXISTS tbl1;
+CREATE TABLE tbl1 (  code INTEGER, color VARCHAR(30) );
+DROP TABLE IF EXISTS tbl2;
+CREATE TABLE tbl2 (  code INTEGER, size VARCHAR(20) );
+
+INSERT INTO tbl1 ( code,color ) VALUES ( 1,'赤' );
+INSERT INTO tbl1 ( code,color ) VALUES ( 2,'白' );
+INSERT INTO tbl1 ( code,color ) VALUES ( 3,'青' );
+
+INSERT INTO tbl2 ( code,size ) VALUES ( 2,'S' );
+INSERT INTO tbl2 ( code,size ) VALUES ( 4,'L' );
+
+/* ---------------------------- */
+
 DROP TABLE IF EXISTS account;
 CREATE TABLE account (  edate DATE, itemid INTEGER, memo VARCHAR(100), income INTEGER, outgo INTEGER  );
 DROP TABLE IF EXISTS item;
@@ -31,3 +45,4 @@ INSERT INTO item ( id,name,comment ) VALUES ( 4,'通信費','携帯電話代・�
 INSERT INTO item ( id,name,comment ) VALUES ( 5,'交通費','電車代・バス代・タクシー代' );
 INSERT INTO item ( id,name,comment ) VALUES ( 6,'住居費','家賃' );
 INSERT INTO item ( id,name,comment ) VALUES ( 7,'交際費','家賃' );
+
